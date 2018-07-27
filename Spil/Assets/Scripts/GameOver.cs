@@ -5,8 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class GameOver : MonoBehaviour {
 
-    public GameObject player1;
-    public GameObject player2;
+    public string sceneToLoad;
 
     public bool playerIsDead;
     
@@ -18,7 +17,7 @@ public class GameOver : MonoBehaviour {
 	void Update () {
         if (playerIsDead)
         {
-            SceneManager.LoadScene("Level 1");
+            SceneManager.LoadScene(sceneToLoad);
         }
 	}
 }

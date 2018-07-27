@@ -20,6 +20,10 @@ public class P1Move : MonoBehaviour {
 
     private void FixedUpdate()
     {
+        if (!grounded)
+        {
+            moveSpeed = moveSpeed / 2;
+        }
         Move(moveSpeed);
         if (Input.GetAxis("Jump") > 0 && grounded)
         {
