@@ -11,6 +11,7 @@ public class P2Move : MonoBehaviour {
     [SerializeField]
     private float jumpForce;
 
+    private bool grounded = true;
     // Update is called once per frame
     void Update()
     {
@@ -21,12 +22,30 @@ public class P2Move : MonoBehaviour {
     {
         Move(moveSpeed);
         
-        if (Input.GetAxis("P2 Jump") > 0)
+        if (Input.GetAxis("P2 Jump") > 0 && grounded)
         {
             Jump(jumpForce);
+            grounded = false;
         }
+       
     }
 
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.collider.CompareTag("Ground"))
+        {
+            grounded = true;
+        }
+       
+    }
+
+    private void OnCollisionExit(Collision collision)
+    {
+        if (collision.collider.CompareTag("Ground"))
+        {
+            grounded = false;
+        }
+    }
     void Move(float speed)
     {
 
