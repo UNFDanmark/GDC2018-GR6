@@ -24,12 +24,12 @@ public class P2Move : MonoBehaviour {
         
         if (Input.GetAxis("P2 Jump") > 0 && grounded)
         {
-            Jump(jumpForce);
-            grounded = false;
+            Jump(jumpForce);           
         }
        
     }
 
+    //to funktioner til at sørge for at registrere om man er i luften eller ej
     private void OnCollisionEnter(Collision collision)
     {
         if (collision.collider.CompareTag("Ground"))
@@ -38,7 +38,6 @@ public class P2Move : MonoBehaviour {
         }
        
     }
-
     private void OnCollisionExit(Collision collision)
     {
         if (collision.collider.CompareTag("Ground"))
