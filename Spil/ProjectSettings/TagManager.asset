@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Dark
   - Light
+  - Ground
   layers:
   - Default
   - TransparentFX
@@ -16,8 +17,8 @@ TagManager:
   - 
   - 
   - PostProcessing
-  - 
-  - 
+  - Light Player
+  - Dark Player
   - 
   - 
   - 
