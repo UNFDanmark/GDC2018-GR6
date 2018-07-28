@@ -7,8 +7,8 @@ public class P1Move : MonoBehaviour {
 
     [SerializeField]
     private float moveSpeed;
-    [SerializeField]
-    private float airSpeed;
+    //[SerializeField]
+    //private float airSpeed;
     [SerializeField]
     private Rigidbody p1Rb;
     [SerializeField]
@@ -23,14 +23,7 @@ public class P1Move : MonoBehaviour {
 
     private void FixedUpdate()
     {
-        if (!grounded)
-        {
-            Move(airSpeed);
-        }
-        else
-        {
-            Move(moveSpeed);
-        }
+        Move(moveSpeed);
         
         if (Input.GetAxis("Jump") > 0 && grounded)
         {
