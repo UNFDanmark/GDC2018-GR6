@@ -8,6 +8,10 @@ public class CameraZoneScript : MonoBehaviour {
     public bool player2Passed;
 
     public CameraMove cM;
+    private void Awake()
+    {
+        cM = FindObjectOfType<CameraMove>();
+    }
 
     private void OnTriggerEnter(Collider other)
     {
@@ -23,6 +27,7 @@ public class CameraZoneScript : MonoBehaviour {
         if (player1Passed && player2Passed)
         {
             cM.MoveCamera();
+            gameObject.SetActive(false);
         }
     }
 
