@@ -12,7 +12,7 @@ public class P2JumpScript : MonoBehaviour {
     public bool grounded = true;
     // Use this for initialization
     void Awake () {
-        myRigidbody = GetComponentInParent<Rigidbody>();
+        myRigidbody = GetComponent<Rigidbody>();
 	}
 	
 	// Update is called once per frame
