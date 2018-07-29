@@ -6,7 +6,10 @@ public class SpikeScript : MonoBehaviour {
 
     public GameOver gM;
 
-    
+    private void Awake()
+    {
+        gM = FindObjectOfType<GameOver> ();
+    }
 
     private void OnCollisionEnter(Collision other)
     {
