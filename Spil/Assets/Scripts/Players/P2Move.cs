@@ -8,10 +8,6 @@ public class P2Move : MonoBehaviour {
     private float moveSpeed;
     [SerializeField]
     private Rigidbody p2Rb;
-    [SerializeField]
-    private float jumpForce;
-
-    private bool grounded = true;
     // Update is called once per frame
     void Update()
     {
@@ -20,31 +16,10 @@ public class P2Move : MonoBehaviour {
 
     private void FixedUpdate()
     {
-        Move(moveSpeed);
-        
-        if (Input.GetAxis("P2 Jump") > 0 && grounded)
-        {
-            Jump(jumpForce);           
-        }
-       
+        Move(moveSpeed);       
     }
 
-    //to funktioner til at sørge for at registrere om man er i luften eller ej
-    private void OnCollisionEnter(Collision collision)
-    {
-        if (collision.collider.CompareTag("Ground"))
-        {
-            grounded = true;
-        }
-       
-    }
-    private void OnCollisionExit(Collision collision)
-    {
-        if (collision.collider.CompareTag("Ground"))
-        {
-            grounded = false;
-        }
-    }
+
     void Move(float speed)
     {
 
@@ -52,9 +27,5 @@ public class P2Move : MonoBehaviour {
         p2Rb.velocity = velocityMove;
     }
 
-    void Jump(float force)  
-    {
-        Vector3 velocityMove = new Vector3(p2Rb.velocity.x, force, p2Rb.velocity.z);
-        p2Rb.velocity = velocityMove;
-    }
+    
 }

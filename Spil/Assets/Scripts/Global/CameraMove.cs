@@ -4,16 +4,25 @@ using UnityEngine;
 
 public class CameraMove : MonoBehaviour {
 
-    GameManager gameManager;
+    //GameManager gameManager;
     public float cameraSpeed;
 
 	// Use this for initialization
-	void Awake () {
-        gameManager = GameObject.FindObjectOfType<GameManager>();
-	}
+	//void Awake () {
+      //  gameManager = GameObject.FindObjectOfType<GameManager>();
+	//}
 	
 	// Update is called once per frame
 	void Update () {
-        transform.Translate(0, -cameraSpeed * Time.deltaTime, 0);
+        if (Input.GetKeyDown(KeyCode.P))
+        {
+            MoveCamera();
+        }
+        
 	}
+
+    void MoveCamera()
+    {
+        transform.Translate(0, -23.5f, 0);
+    }
 }
