@@ -15,12 +15,15 @@ ModelImporter:
     2300000: Line001
     2300002: Sphere002
     2300004: z
+    2300006: //RootNode
     3300000: Line001
     3300002: Sphere002
     3300004: z
+    3300006: //RootNode
     4300000: z
     4300002: Line001
     4300004: Sphere002
+    4300006: Box001
     7400000: Take 001
     9500000: //RootNode
   externalObjects: {}
