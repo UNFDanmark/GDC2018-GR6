@@ -9,7 +9,7 @@ public class DeathZoneDark : MonoBehaviour {
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.tag == "Dark")
+        if (other.tag == "Dark" && !other.isTrigger)
         {
             Destroy(other.gameObject);
             gM.playerIsDead = true;

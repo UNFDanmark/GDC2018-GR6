@@ -8,7 +8,7 @@ public class DeathZoneLight : MonoBehaviour {
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.tag == "Light")
+        if (other.tag == "Light" && !other.isTrigger)
         {
             Destroy (other.gameObject);
             gM.playerIsDead = true;
