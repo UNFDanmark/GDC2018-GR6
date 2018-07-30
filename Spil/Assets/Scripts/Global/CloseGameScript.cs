@@ -20,12 +20,14 @@ public class CloseGameScript : MonoBehaviour
     {
         if (!isActive)
         {
-            creditSlide.gameObject.SetActive(true);
+            //creditSlide.enabled = true;
+            creditSlide.SetActive(true);
             isActive = true;
         }
-        if (isActive)
+        else if (isActive)
         {
-            creditSlide.gameObject.SetActive(false);
+            //creditSlide.enabled = false;
+            creditSlide.SetActive(false);
             isActive = false;
         }
     }
