@@ -7,23 +7,14 @@ public class P1Move : MonoBehaviour {
 
     [SerializeField]
     private float moveSpeed;
-    //[SerializeField]
-    //private float airSpeed;
     [SerializeField]
     private Rigidbody p1Rb;
     
-	// Update is called once per frame
-
-	void Update () {
-		
-	}
 
     private void FixedUpdate()
     {
-        Move(moveSpeed);
-        
+        Move(moveSpeed);      
     }
-
 
     void Move(float speed)
     {

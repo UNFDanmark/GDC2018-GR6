@@ -8,11 +8,7 @@ public class P2Move : MonoBehaviour {
     private float moveSpeed;
     [SerializeField]
     private Rigidbody p2Rb;
-    // Update is called once per frame
-    void Update()
-    {
 
-    }
 
     private void FixedUpdate()
     {
