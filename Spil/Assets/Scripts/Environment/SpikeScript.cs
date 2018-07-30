@@ -4,11 +4,13 @@ using UnityEngine;
 
 public class SpikeScript : MonoBehaviour {
 
-    public GameOver gM;
+    private GameOver gM;
+    private List<GameObject> spikes;
 
     private void Awake()
     {
         gM = FindObjectOfType<GameOver> ();
+        //spikes = FindObjectsOfType<>
     }
 
     private void OnCollisionEnter(Collision other)
