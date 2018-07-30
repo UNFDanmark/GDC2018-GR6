@@ -12,10 +12,13 @@ ModelImporter:
     2100000: No Name
     2300000: Sphere001
     2300002: z
+    2300004: //RootNode
     3300000: Sphere001
     3300002: z
+    3300004: //RootNode
     4300000: z
     4300002: Sphere001
+    4300004: zzz
     7400000: Take 001
     9500000: //RootNode
   externalObjects: {}
