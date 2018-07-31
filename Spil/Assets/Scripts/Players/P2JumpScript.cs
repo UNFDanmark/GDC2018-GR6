@@ -9,6 +9,7 @@ public class P2JumpScript : MonoBehaviour {
     private float jumpForce;   
     public bool grounded = true;
     public AudioClip jumpSound;
+    public AudioClip landSound;
     private AudioSource jumpSource;
     // Use this for initialization
     void Awake () {
@@ -29,7 +30,7 @@ public class P2JumpScript : MonoBehaviour {
     {
         if (other.CompareTag("Ground"))
         {
-            jumpSource.PlayOneShot(jumpSound, 0.75f);
+            jumpSource.PlayOneShot(landSound, 0.75f);
             grounded = true;
         }
 
