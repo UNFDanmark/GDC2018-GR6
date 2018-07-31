@@ -6,9 +6,12 @@ public class P2Move : MonoBehaviour {
 
     [SerializeField]
     private float moveSpeed;
-    [SerializeField]
     private Rigidbody p2Rb;
 
+    private void Awake()
+    {
+        p2Rb = GetComponent<Rigidbody>();
+    }
 
     private void FixedUpdate()
     {
@@ -18,7 +21,7 @@ public class P2Move : MonoBehaviour {
 
     void Move(float speed)
     {
-
+       
         Vector3 velocityMove = new Vector3(speed * Input.GetAxis("P2 Horizontal"), p2Rb.velocity.y, p2Rb.velocity.z);
         p2Rb.velocity = velocityMove;
     }

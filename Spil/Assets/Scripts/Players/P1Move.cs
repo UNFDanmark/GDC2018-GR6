@@ -7,9 +7,12 @@ public class P1Move : MonoBehaviour {
 
     [SerializeField]
     private float moveSpeed;
-    [SerializeField]
     private Rigidbody p1Rb;
-    
+
+    private void Awake()
+    {
+        p1Rb = GetComponent<Rigidbody>();
+    }
 
     private void FixedUpdate()
     {

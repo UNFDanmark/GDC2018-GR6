@@ -27,7 +27,7 @@ public class P1JumpScript : MonoBehaviour {
 
     private void OnTriggerEnter(Collider ground)
     {
-        if (ground.tag == "Ground")
+        if (ground.CompareTag("Ground"))
         {
             grounded = true;
         }
@@ -35,7 +35,7 @@ public class P1JumpScript : MonoBehaviour {
     }
     private void OnTriggerExit(Collider ground)
     {
-        if (ground.tag == "Ground")
+        if (ground.CompareTag("Ground"))
         {
             grounded = false;
         }

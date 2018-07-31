@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class P2JumpScript : MonoBehaviour {
 
-    [SerializeField]
     private Rigidbody myRigidbody;
     [SerializeField]
     private float jumpForce;
@@ -25,7 +24,7 @@ public class P2JumpScript : MonoBehaviour {
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.tag == "Ground")
+        if (other.CompareTag("Ground"))
         {
             grounded = true;
         }
@@ -33,7 +32,7 @@ public class P2JumpScript : MonoBehaviour {
     }
     private void OnTriggerExit(Collider c)
     {
-        if (c.tag == "Ground")
+        if (c.CompareTag("Ground"))
         {
             grounded = false;
         }
