@@ -7,11 +7,12 @@ public class P2JumpScript : MonoBehaviour {
     private Rigidbody myRigidbody;
     [SerializeField]
     private float jumpForce;
-
-    public bool grounded = true;
+    private AudioSource jump;
+    private bool grounded = true;
     // Use this for initialization
     void Awake () {
         myRigidbody = GetComponent<Rigidbody>();
+        jump = GetComponent<AudioSource>();
 	}
 	
 	// Update is called once per frame
