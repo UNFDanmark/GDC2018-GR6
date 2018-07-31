@@ -9,7 +9,7 @@ public class P1JumpScript : MonoBehaviour {
     [SerializeField]
     private float jumpForce;
 
-    private bool grounded;
+    public bool grounded;
     // Use this for initialization
     void Awake()
     {

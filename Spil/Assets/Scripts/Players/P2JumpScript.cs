@@ -8,7 +8,7 @@ public class P2JumpScript : MonoBehaviour {
     [SerializeField]
     private float jumpForce;
     private AudioSource jumpSource;
-    private bool grounded = true;
+    public bool grounded = true;
     public AudioClip jumpSound;
     // Use this for initialization
     void Awake () {
