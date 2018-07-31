@@ -8,8 +8,9 @@ public class P1JumpScript : MonoBehaviour {
     private Rigidbody myRigidbody;
     [SerializeField]
     private float jumpForce;
-
-    private bool grounded;
+    public bool grounded = true;
+    public AudioClip jumpSound;
+    private AudioSource jumpSource;
     // Use this for initialization
     void Awake()
     {
@@ -21,21 +22,23 @@ public class P1JumpScript : MonoBehaviour {
     {
         if (Input.GetAxis("Jump") > 0 && grounded)
         {
+            //jumpSource.PlayOneShot(jumpSound);
             Jump(jumpForce);
         }
     }
 
-    private void OnTriggerEnter(Collider ground)
+    private void OnTriggerEnter(Collider c)
     {
-        if (ground.CompareTag("Ground"))
+        if (c.CompareTag("Ground"))
         {
+            jumpSource.PlayOneShot(jumpSound, 0.75f);
             grounded = true;
         }
 
     }
-    private void OnTriggerExit(Collider ground)
+    private void OnTriggerExit(Collider c)
     {
-        if (ground.CompareTag("Ground"))
+        if (c.CompareTag("Ground"))
         {
             grounded = false;
         }

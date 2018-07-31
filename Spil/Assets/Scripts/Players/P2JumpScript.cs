@@ -6,18 +6,21 @@ public class P2JumpScript : MonoBehaviour {
 
     private Rigidbody myRigidbody;
     [SerializeField]
-    private float jumpForce;
-
+    private float jumpForce;   
     public bool grounded = true;
+    public AudioClip jumpSound;
+    private AudioSource jumpSource;
     // Use this for initialization
     void Awake () {
         myRigidbody = GetComponent<Rigidbody>();
+        jumpSource = GetComponent<AudioSource>();
 	}
 	
 	// Update is called once per frame
 	void Update () {
         if (Input.GetAxis("P2 Jump") > 0 && grounded)
         {
+            jumpSource.PlayOneShot(jumpSound);
             Jump(jumpForce);
         }
     }
@@ -26,6 +29,7 @@ public class P2JumpScript : MonoBehaviour {
     {
         if (other.CompareTag("Ground"))
         {
+            jumpSource.PlayOneShot(jumpSound, 0.75f);
             grounded = true;
         }
 
@@ -33,7 +37,7 @@ public class P2JumpScript : MonoBehaviour {
     private void OnTriggerExit(Collider c)
     {
         if (c.CompareTag("Ground"))
-        {
+        {          
             grounded = false;
         }
     }
