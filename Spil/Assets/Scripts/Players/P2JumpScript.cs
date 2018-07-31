@@ -7,12 +7,13 @@ public class P2JumpScript : MonoBehaviour {
     private Rigidbody myRigidbody;
     [SerializeField]
     private float jumpForce;
-    private AudioSource jump;
+    private AudioSource jumpSource;
     private bool grounded = true;
+    public AudioClip jumpSound;
     // Use this for initialization
     void Awake () {
         myRigidbody = GetComponent<Rigidbody>();
-        jump = GetComponent<AudioSource>();
+        jumpSource = GetComponent<AudioSource>();
 	}
 	
 	// Update is called once per frame
@@ -35,6 +36,7 @@ public class P2JumpScript : MonoBehaviour {
     {
         if (c.CompareTag("Ground"))
         {
+            jumpSource.PlayOneShot(jumpSound);
             grounded = false;
         }
     }
