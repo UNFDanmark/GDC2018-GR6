@@ -757,6 +757,10 @@ Prefab:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 02a16ada24637e044bdcb0e5dcfe2aab, type: 2}
+    - target: {fileID: 100000, guid: 4a6a88c24b9d78948aebfcefe2e72bcf, type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4a6a88c24b9d78948aebfcefe2e72bcf, type: 3}
   m_IsPrefabAsset: 0
@@ -1941,6 +1945,10 @@ Prefab:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 02a16ada24637e044bdcb0e5dcfe2aab, type: 2}
+    - target: {fileID: 100000, guid: 4a6a88c24b9d78948aebfcefe2e72bcf, type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4a6a88c24b9d78948aebfcefe2e72bcf, type: 3}
   m_IsPrefabAsset: 0
@@ -2115,6 +2123,10 @@ Prefab:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 02a16ada24637e044bdcb0e5dcfe2aab, type: 2}
+    - target: {fileID: 100000, guid: 4a6a88c24b9d78948aebfcefe2e72bcf, type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4a6a88c24b9d78948aebfcefe2e72bcf, type: 3}
   m_IsPrefabAsset: 0
@@ -2774,6 +2786,10 @@ Prefab:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 02a16ada24637e044bdcb0e5dcfe2aab, type: 2}
+    - target: {fileID: 100000, guid: 4a6a88c24b9d78948aebfcefe2e72bcf, type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4a6a88c24b9d78948aebfcefe2e72bcf, type: 3}
   m_IsPrefabAsset: 0
@@ -5868,6 +5884,10 @@ Prefab:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 02a16ada24637e044bdcb0e5dcfe2aab, type: 2}
+    - target: {fileID: 100000, guid: 4a6a88c24b9d78948aebfcefe2e72bcf, type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4a6a88c24b9d78948aebfcefe2e72bcf, type: 3}
   m_IsPrefabAsset: 0
@@ -8738,6 +8758,10 @@ Prefab:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 02a16ada24637e044bdcb0e5dcfe2aab, type: 2}
+    - target: {fileID: 100000, guid: 4a6a88c24b9d78948aebfcefe2e72bcf, type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4a6a88c24b9d78948aebfcefe2e72bcf, type: 3}
   m_IsPrefabAsset: 0
@@ -9305,7 +9329,7 @@ GameObject:
   - component: {fileID: 1590097611}
   - component: {fileID: 1590097610}
   m_Layer: 5
-  m_Name: Image (1)
+  m_Name: Background
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10159,7 +10183,7 @@ GameObject:
   - component: {fileID: 1729543625}
   - component: {fileID: 1729543624}
   m_Layer: 5
-  m_Name: Image
+  m_Name: Background pt1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11927,7 +11951,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4766297796175470, guid: 5afb7b96dabb30e4ebd46fa558260a06, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -7.5
+      value: -7.306
       objectReference: {fileID: 0}
     - target: {fileID: 4766297796175470, guid: 5afb7b96dabb30e4ebd46fa558260a06, type: 2}
       propertyPath: m_LocalPosition.y
@@ -11935,7 +11959,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4766297796175470, guid: 5afb7b96dabb30e4ebd46fa558260a06, type: 2}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: -0.112
       objectReference: {fileID: 0}
     - target: {fileID: 4766297796175470, guid: 5afb7b96dabb30e4ebd46fa558260a06, type: 2}
       propertyPath: m_LocalRotation.x

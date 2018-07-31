@@ -15,6 +15,7 @@ public class P1JumpScript : MonoBehaviour {
     void Awake()
     {
         myRigidbody = GetComponent<Rigidbody>();
+        jumpSource = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -22,7 +23,7 @@ public class P1JumpScript : MonoBehaviour {
     {
         if (Input.GetAxis("Jump") > 0 && grounded)
         {
-            //jumpSource.PlayOneShot(jumpSound);
+            jumpSource.PlayOneShot(jumpSound);
             Jump(jumpForce);
         }
     }
