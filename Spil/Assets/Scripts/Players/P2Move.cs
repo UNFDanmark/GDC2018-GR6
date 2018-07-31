@@ -7,7 +7,7 @@ public class P2Move : MonoBehaviour {
     [SerializeField]
     private float moveSpeed;
     private Rigidbody p2Rb;
-    public AudioSource walk;
+    private AudioSource walk;
     private P2JumpScript jumpScript;
 
     private void Awake()
