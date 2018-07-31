@@ -13,8 +13,6 @@ public class BackgroundMusicScript : MonoBehaviour {
             GameObject newSource = Instantiate(source);
             DontDestroyOnLoad(newSource);
         }
-       
-
-        
+               
 	}
 }
