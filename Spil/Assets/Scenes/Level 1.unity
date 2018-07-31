@@ -4188,6 +4188,11 @@ Prefab:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: f49f5f6866992a6429806c2572df045c, type: 2}
+    - target: {fileID: 114219131824752456, guid: e72b1cc4f2688884dbfd2dbc2573f9a7,
+        type: 2}
+      propertyPath: jumpSound
+      value: 
+      objectReference: {fileID: 8300000, guid: faf0c37775c822e41b23badf8ac339b3, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e72b1cc4f2688884dbfd2dbc2573f9a7, type: 2}
   m_IsPrefabAsset: 0
