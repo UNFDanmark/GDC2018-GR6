@@ -30,7 +30,7 @@ public class P2JumpScript : MonoBehaviour {
     {
         if (other.CompareTag("Ground"))
         {
-            jumpSource.PlayOneShot(landSound, 0.75f);
+            jumpSource.PlayOneShot(landSound, 0.2f);
             grounded = true;
         }
 
